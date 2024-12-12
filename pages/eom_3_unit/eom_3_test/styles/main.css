@@ -42,7 +42,7 @@ footer {
 }
 p{
     text-align: left;
-    text-indent: 4%;
+    text-indent: 0;
     margin-bottom: 25px;
     font-size: clamp(18px, 1.5vw, 25px);
     margin-left: 25px;
@@ -862,7 +862,7 @@ ul li div{
     width: 400px;
 }
 .test_wrapper{
-    max-width: 50%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -944,7 +944,7 @@ line{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 60% !important;
+    width: 100% !important;
 }
 .test_wrapper_type_10{
     display: flex;
@@ -1017,10 +1017,10 @@ line{
 .targetField, .definition{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     margin-right: 15px;
-    font-size: clamp(15px, 1.5vw, 25px);
-    width: clamp(150px, 20vw, 450px);
+    font-size: clamp(15px, 1.5vw, 20px);
+    width: clamp(150px, 30vw, 800px);
     height: 100px;
     margin-left: 15px;
 }
@@ -1153,13 +1153,19 @@ line{
 .zoom_paragraph{
     display: block;
     height: initial !important;
-    width: 350px;
-    white-space: nowrap; 
+    width: 100%;
+    /* white-space: nowrap; 
     overflow: hidden; 
-    text-overflow: ellipsis !important; 
+    text-overflow: ellipsis !important;  */
     align-items: center !important;
     justify-content: flex-start !important;
 }
+
+p.zoom_paragraph{
+   font-size: clamp(14px, 1.5vw, 20px); 
+   margin: 0;
+}
+
 .popup_inner_content_type_10{
     font-size: 25px;
 }

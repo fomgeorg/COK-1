@@ -93,6 +93,7 @@ function waitForData() {
             }
             // Отображение изображения, если имеется
             if (imageInfo && test.find(item => item.type === 1) || test.find(item => item.type === 2)) {
+                if(imageInfo){               
                 var imageDiv = document.createElement('div');
                 imageDiv.className = 'image_test_type_2';
                 var img;
@@ -107,7 +108,7 @@ function waitForData() {
                 img.src = imageInfo.image_path;
                 img.alt = 'Проверьте image_path';
                 imageDiv.appendChild(img);
-                dynamicContainer.appendChild(imageDiv);
+                dynamicContainer.appendChild(imageDiv);}
             }
             // Отображение теста с вариантами ответов
             if (answers && correctAnswers) {

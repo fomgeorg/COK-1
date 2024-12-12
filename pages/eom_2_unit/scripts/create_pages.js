@@ -113,6 +113,9 @@ function waitForData(){
                     if (item.image_path.includes(".jpg") || item.image_path.includes(".png")){
                         imgElement = document.createElement('img');
                         imgElement.classList = 'zoomable';
+                        if (item.unique){
+                            imgElement.classList.add(`unique_${currentPageIndex}`);
+                        }
                     } else if (item.image_path.includes(".mp4")){
                         imgElement = document.createElement('video');
                         imgElement.controls = "controls";
