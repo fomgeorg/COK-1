@@ -10,6 +10,11 @@
     visibility: hidden;
 }
 
+.small_header_fourteen_custom {
+    max-width: 600px;
+    margin: 0 0 0 10px;
+    min-height: 100px;
+}
 
 @media (max-width: 1300px) {
 .p_custom {
@@ -21,12 +26,20 @@
     text-overflow: ellipsis !important; 
     align-items: center !important;
     justify-content: flex-start !important;
+    }
 }
 
 .zoom_button {
     visibility: visible;
 }
 
+@media (max-width: 720px) {
+
+    .small_header_fourteen_custom {
+        max-width: 500px;
+        margin: 0 0 0 10px;
+        min-height: 20px;
+    }
 }
 
 .targetField {

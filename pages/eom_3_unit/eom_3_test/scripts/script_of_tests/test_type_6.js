@@ -59,7 +59,7 @@ function checkParagraph(){
             if (index % 2 !== 0) {
                 colHeader.classList.add('odd_header');  // Добавляем класс, если индекс нечетный
             };
-            colHeader.textContent = header;
+            colHeader.innerHTML = header;
             col.appendChild(colHeader);
             var colList = document.createElement('ul');
             colList.classList.add('col-ul');
